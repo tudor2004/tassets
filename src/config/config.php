@@ -140,8 +140,8 @@ return [
 		// Yui JS compressor settings
 		'js_yui' => [
 
-			// Path to yui jar
-			'path_jar' => '/usr/share/yui-compressor/yui-compressor.jar',
+			// Path to yui jar. If "false" than the default one is used.
+			'path_jar' => false,
 
 			// Path to java binary
 			'path_java' => '/usr/bin/java',
@@ -175,8 +175,8 @@ return [
 		// Yui CSS compressor settings
 		'css_yui' => [
 
-			// Path to yui jar
-			'path_jar' => '/usr/share/yui-compressor/yui-compressor.jar',
+			// Path to yui jar. If "false" than the default one is used.
+			'path_jar' => false,
 
 			// Path to java binary
 			'path_java' => '/usr/bin/java'

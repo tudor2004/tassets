@@ -40,7 +40,7 @@
         "php": ">=5.4.0",
         "illuminate/support": "5.0.*",
         "kriswallsmith/assetic": "dev-master",
-        "leafo/lessphp": "0.4.*@dev",
+        "leafo/lessphp": "0.5.*@dev",
         "leafo/scssphp": "dev-master",
         "ptachoire/cssembed": "dev-master",
         "leafo/scssphp-compass": "dev-master",

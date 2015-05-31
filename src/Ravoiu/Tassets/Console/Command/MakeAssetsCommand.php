@@ -102,7 +102,9 @@ class MakeAssetsCommand extends Command
 			$filter = new CssMinFilter();
 			$filters['css_min'] = $filter;
 			// -- Css Yui
-			$pathJarCSS = $this->config['filters']['css_yui']['path_jar'] ? $this->config['filters']['css_yui']['path_jar'] : __DIR__ . ' ./../../../../../compressor/yuicompressor.jar';
+			$pathJarCSS = $this->config['filters']['css_yui']['path_jar'] ?
+				$this->config['filters']['css_yui']['path_jar'] :
+				realpath(__DIR__ . '/../../../../../compressor/yuicompressor.jar');
 			$filter = new CssCompressorFilter($pathJarCSS, $this->config['filters']['css_yui']['path_java']);
 			$filters['css_yui'] = $filter;
 			// -- CSS LessPHP
@@ -125,7 +127,9 @@ class MakeAssetsCommand extends Command
 			$filter->keepImportantComments($this->config['filters']['js_squeeze']['keep_imp_comments']);
 			$filters['js_squeeze'] = $filter;
 			// -- Js Yui
-			$pathJarJS = $this->config['filters']['js_yui']['path_jar'] ? $this->config['filters']['js_yui']['path_jar'] : __DIR__ . ' ./../../../../../compressor/yuicompressor.jar';
+			$pathJarJS = $this->config['filters']['js_yui']['path_jar'] ?
+				$this->config['filters']['js_yui']['path_jar'] :
+				realpath(__DIR__ . '/../../../../../compressor/yuicompressor.jar');
 			$filter = new JsCompressorFilter($pathJarJS, $this->config['filters']['js_yui']['path_java']);
 			$filter->setNomunge($this->config['filters']['js_yui']['no_munge']);
 			$filter->setPreserveSemi($this->config['filters']['js_yui']['preserve_semi']);
