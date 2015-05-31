@@ -39,7 +39,7 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "5.0.*",
-        "kriswallsmith/assetic": "1.2.1",
+        "kriswallsmith/assetic": "dev-master",
         "leafo/lessphp": "0.4.*@dev",
         "leafo/scssphp": "dev-master",
         "ptachoire/cssembed": "dev-master",
@@ -58,7 +58,7 @@
         "leafo/lessphp": "Integration with the lessphp LESS compiler",
         "leafo/scssphp": "Integration with the scssphp SCSS compiler",
         "leafo/scssphp-compass": "Integration with the scssphp SCSS Compass compiler",
-        "natxet/CssMin": "Integration with the scssphp CSSMin compiler",
+        "natxet/cssmin": "Integration with the scssphp CSSMin compiler",
         "ptachoire/cssembed": "Integration with phpcssembed to embed data uris",
         "patchwork/jsqueeze": "Integration with the JSqueeze JavaScript compressor",
         "linkorb/jsmin-php": "Integration with JSMin"
