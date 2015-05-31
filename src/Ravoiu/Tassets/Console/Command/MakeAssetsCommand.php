@@ -102,7 +102,8 @@ class MakeAssetsCommand extends Command
 			$filter = new CssMinFilter();
 			$filters['css_min'] = $filter;
 			// -- Css Yui
-			$filter = new CssCompressorFilter($this->config['filters']['css_yui']['path_jar'], $this->config['filters']['css_yui']['path_java']);
+			$pathJarCSS = $this->config['filters']['css_yui']['path_jar'] ? $this->config['filters']['css_yui']['path_jar'] : __DIR__ . ' ./../../../../../compressor/yuicompressor.jar' 
+			$filter = new CssCompressorFilter($pathJarCSS, $this->config['filters']['css_yui']['path_java']);
 			$filters['css_yui'] = $filter;
 			// -- CSS LessPHP
 			$filter = new LessphpFilter();
@@ -124,7 +125,8 @@ class MakeAssetsCommand extends Command
 			$filter->keepImportantComments($this->config['filters']['js_squeeze']['keep_imp_comments']);
 			$filters['js_squeeze'] = $filter;
 			// -- Js Yui
-			$filter = new JsCompressorFilter($this->config['filters']['js_yui']['path_jar'], $this->config['filters']['js_yui']['path_java']);
+			$pathJarJS = $this->config['filters']['js_yui']['path_jar'] ? $this->config['filters']['js_yui']['path_jar'] : __DIR__ . ' ./../../../../../compressor/yuicompressor.jar' 
+			$filter = new JsCompressorFilter($pathJarJs, $this->config['filters']['js_yui']['path_java']);
 			$filter->setNomunge($this->config['filters']['js_yui']['no_munge']);
 			$filter->setPreserveSemi($this->config['filters']['js_yui']['preserve_semi']);
 			$filter->setDisableOptimizations($this->config['filters']['js_yui']['disable_opti']);
