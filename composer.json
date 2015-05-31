@@ -45,7 +45,9 @@
         "ptachoire/cssembed": "dev-master",
         "leafo/scssphp-compass": "dev-master",
         "patchwork/jsqueeze": "~2.0@dev",
-        "jeremeamia/superclosure": "~2.2@dev"
+        "jeremeamia/superclosure": "~2.2@dev",
+        "natxet/cssmin": "~3.0@dev",
+        "linkorb/jsmin-php": "dev-master"
     },
     "autoload": {
         "psr-0": {
