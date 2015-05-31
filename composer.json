@@ -1,0 +1,65 @@
+{
+    "name": "ravoiu/tassets",
+    "description": "Tassets is a PHP-only asset manager for Laravel based off of Assetic and Potion",
+    "authors": [
+        {
+            "name": "Tudor-Dan Ravoiu",
+            "email": "tudor2004@gmail.com"
+        }
+    ],
+    "keywords": [
+        "assets",
+        "asset-processing",
+        "asset-management",
+        "less",
+        "sass",
+        "scss",
+        "minifying",
+        "minify",
+        "laravel",
+        "compass",
+        "cssmin",
+        "jsmin"
+    ],
+    "tags": [
+        "assets",
+        "asset-processing",
+        "asset-management",
+        "less",
+        "sass",
+        "scss",
+        "minifying",
+        "minify",
+        "laravel",
+        "compass",
+        "cssmin",
+        "jsmin"
+
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*",
+        "kriswallsmith/assetic": "1.2.1",
+        "leafo/lessphp": "0.4.*@dev",
+        "leafo/scssphp": "dev-master",
+        "ptachoire/cssembed": "dev-master",
+        "leafo/scssphp-compass": "dev-master",
+        "patchwork/jsqueeze": "~2.0@dev",
+        "jeremeamia/superclosure": "~2.2@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "Ravoiu\\Tassets\\": "src/"
+        }
+    },
+    "suggest": {
+        "leafo/lessphp": "Integration with the lessphp LESS compiler",
+        "leafo/scssphp": "Integration with the scssphp SCSS compiler",
+        "leafo/scssphp-compass": "Integration with the scssphp SCSS Compass compiler",
+        "natxet/CssMin": "Integration with the scssphp CSSMin compiler",
+        "ptachoire/cssembed": "Integration with phpcssembed to embed data uris",
+        "patchwork/jsqueeze": "Integration with the JSqueeze JavaScript compressor",
+        "linkorb/jsmin-php": "Integration with JSMin"
+    },
+    "minimum-stability": "dev"
+}
